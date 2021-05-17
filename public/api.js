@@ -1,17 +1,15 @@
 const key = 'T993Z7zFgfyLLCYhT9jWmpxiTTsHraX6';
 let searchBtn= document.querySelector("#search");
 let searchInput=document.getElementById("searchTerm");
-//let searchValue= searchInput.value;
-// var searchValue=document.getElementById("searchTerm").value;
-// console.log(searchValue);
+
 let div = document.querySelector(".results")
-// const URL = `http://api.giphy.com/v1/gifs/search?api_key=${key}&limit=10&offset=0&rating=pg-13&lang=en&q=${searchValue}`;
+
 function fetchResults() {
   console.log("fetchResults called", searchInput.value);
 
   var searchValue=searchInput.value;
 
-  const URL = `http://api.giphy.com/v1/gifs/search?api_key=${key}&limit=10&offset=0&rating=pg-13&lang=en&q=${searchValue}`;
+  const URL = `https://api.giphy.com/v1/gifs/search?api_key=${key}&limit=10&offset=0&rating=pg-13&lang=en&q=${searchValue}`;
   console.log(URL);
 
   fetch(URL)
