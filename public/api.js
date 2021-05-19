@@ -9,7 +9,7 @@ function fetchResults() {
 
   let searchValue = searchInput.value;
 
-  const URL = `https://api.giphy.com/v1/gifs/search?api_key=${key}&limit=10&offset=0&rating=pg-13&lang=en&q=${searchValue}`;
+  const URL = `https://api.giphy.com/v1/gifs/search?api_key=${key}&limit=5&offset=0&rating=pg-13&lang=en&q=${searchValue}`;
   console.log(URL);
 
   fetch(URL)

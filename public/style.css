@@ -28,3 +28,9 @@ h1 {
 .input-group-text {
   margin: 0px 0px 0px 10px;
 }
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
